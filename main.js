@@ -6,21 +6,20 @@ function setFirstName(person, value ){
   return person
  }
 
-//GET FIRST NAME
+//GET FIRST NAME =======================================================================
 let person1 = {
   firstName: 'Colin',
   lastName: 'Jaffe',
-  age: 39
-
-
+  age: 39,
+  married: false
 
 };
 
 let person2 = {
 firstName: 'Petra',
 lastName: 'Solano',
-age: 25
-
+age: 25,
+married: false
 
 };
 
@@ -40,7 +39,7 @@ function getFirstName(name){
 console.log(getFirstName(person1));
 console.log(getFirstName(person2));
 
-// GET LAST NAME
+// GET LAST NAME =======================================================================
 
 function getLastName(name){
   return name.lastName
@@ -49,7 +48,7 @@ function getLastName(name){
 console.log(getLastName(person1));
 console.log(getLastName(person2));
 
-// GET FULL NAME
+// GET FULL NAME =========================================================================
 
 function getFullName(name){
   let first = name.firstName
@@ -61,7 +60,7 @@ console.log(getFullName(person1));
 console.log(getFullName(person2));
 
 
-// SET FIRST NAME
+// SET FIRST NAME ========================================================================
 
 function setFirstName(person, value ){
   person.firstName = value
@@ -83,7 +82,7 @@ function setAge(person, value ){
 
  console.log((setAge(person2.age), 35));
  
- // GIVE BIRTHDAY
+ // GIVE BIRTHDAY============================================================================
 
  function giveBirthday(person){
    if ( person.age = person.age + 1){}
@@ -98,23 +97,31 @@ function setAge(person, value ){
  console.log(giveBirthday(person2))
  console.log(giveBirthday(baby))
 
- //MARRY
- person1.married = false;
- person2.married = false;
+ //MARRY======================================================================================
+ 
+ function marry(user, married){
+        if (user.married = "true"){
+              user.married = "true"   
+        } 
+        return user
+        function getFullName(user, spouseName){
+         if  (user.spouseName === undefined){
+              user.spouseName = ""
+         }
+          return user
+        }
+       
 
- person1.married = true;
-  person2.married = true;
-
- function marry(person1, person2){
-  person1.spouseName = person2.firstName + " " + person2.lastName;
-  person2.spouseName = person1.firstName + " " + person2.lastname;
-  return person1, person2
+  } 
   
- }
-     
-      console.log(marry(person1.married.spouseName))
 
-      console.log(marry(person2.married.spouseName))
+      console.log(marry(person1));
+      console.log(marry(person2));
+      console.log((getFullName(person1.spouseName = (person2))))
+      console.log((getFullName(person2.spouseName = (person1))))
+      
+
+      
       
     
 
